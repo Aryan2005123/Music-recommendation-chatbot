@@ -1,0 +1,16 @@
+Instructions to run in VS Code (detailed):
+
+1. Open folder in VS Code.
+2. Create virtual environment:
+   python -m pip install --upgrade pip setuptools wheel
+3. Activate:
+   - PowerShell: .\venv\Scripts\Activate.ps1
+   - Command Prompt: .\venv\Scripts\activate.bat
+   - macOS/Linux: source venv/bin/activate
+4. Install dependencies:
+   pip install -r src/requirements.txt
+5. Run the Flask app:
+   python src/app.py
+6. Try the endpoints:
+   http://127.0.0.1:5000/recommend/movies/user/1
+   http://127.0.0.1:5000/recommend/music/user/1
